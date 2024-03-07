@@ -1,0 +1,12 @@
+.next-task {
+    display: none;
+    background-color: var(--primary-text);
+}
+
+
+@media screen and (min-width: 1025px) {
+    .next-task {
+        grid-area: next-task;
+        display: flex;
+    }
+}

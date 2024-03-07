@@ -1,0 +1,34 @@
+* {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.next-task {
+    display: none;
+    background-color: var(--primary-text);
+}
+
+.tasks-container {
+    gap: 2px;
+}
+
+
+@media screen and (min-width: 1025px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(1, 100vh);
+        grid-template-areas: "next-task status-today";
+        padding: 0 70px 0 10%;
+    }
+
+    app-status-today {
+        grid-area: status-today;
+    }
+
+    .next-task {
+        grid-area: next-task;
+        display: flex;
+    }
+}

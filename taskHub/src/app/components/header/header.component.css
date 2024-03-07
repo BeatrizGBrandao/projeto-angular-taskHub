@@ -1,0 +1,42 @@
+.header-mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 45px;
+}
+
+.header-desktop {
+    display: none;
+}
+
+.btn-export {
+    background-image: url(../../../assets/download-icon.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 10.2px 10px;
+    background-color: #96ce1f;
+    border-radius: 25px;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1025px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .header-desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 70px;
+
+    }
+    .btn-export {
+        background-position: 35px 10px;
+        padding: 0 43px 0 69px;
+        border-radius: 40px;
+        color: #FFF;
+        height: 40px;
+    }
+
+  }

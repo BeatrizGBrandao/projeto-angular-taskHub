@@ -1,0 +1,61 @@
+<div class="task-container padding-mobile">
+    <fieldset>
+        <legend class="task-project">Teste</legend>
+        <div class="task-container-info">
+            <p class="task-name">Site</p>
+            <p class="task-desc-reduced">Lorem ipsum</p>
+            <div class="task-due-container">
+                <p class="task-due-date">12 Nov</p>
+                <img ngSrc="/assets/burger-menu-grey.svg" width="18" height="18">
+            </div>
+        </div>
+    </fieldset>
+</div>
+
+<style>
+    fieldset {
+        width: 80%;
+        border: 2px groove var(--green-color);
+        padding: 0 1.4em 0.5em 1.4em;
+        margin: 0 0 0.5em 0;
+        border-radius: 50px;
+
+        legend {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 0 10px;
+            color: var(--primary-text);
+        }
+    }
+
+    .task-container-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .task-name {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .task-desc-reduced {
+            font-weight: 300;
+            font-size: 18px;
+
+        }
+
+        .task-due-container {
+            color: #fff;
+            font-weight: 700;
+            background-color: var(--primary-text);
+            padding: 0 9px;
+            border-radius: 20px;
+        }
+
+        .task-due-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+</style>
