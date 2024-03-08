@@ -1,7 +1,6 @@
 * {
     display: flex;
     flex-direction: column;
-    gap: 30px;
 }
 
 .next-task {
@@ -11,16 +10,18 @@
 
 .tasks-container {
     gap: 2px;
+    padding-left: 45px;
+    width: 90%;
 }
 
 
 @media screen and (min-width: 1025px) {
     main {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: 30% 70%;
         grid-template-rows: repeat(1, 100vh);
         grid-template-areas: "next-task status-today";
-        padding: 0 70px 0 10%;
+        width: 90vw;
     }
 
     app-status-today {
@@ -30,5 +31,9 @@
     .next-task {
         grid-area: next-task;
         display: flex;
+    }
+
+    .task-container {
+        padding-left: 4vw;
     }
 }

@@ -1,6 +1,7 @@
 .next-task {
     display: none;
     background-color: var(--primary-text);
+    height: 736px;
 }
 
 

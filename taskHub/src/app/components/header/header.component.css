@@ -20,6 +20,8 @@
     cursor: pointer;
 }
 
+
+
 @media screen and (min-width: 1025px) {
     .header-mobile {
         display: none;
@@ -28,7 +30,8 @@
     .header-desktop {
         display: flex;
         justify-content: space-between;
-        padding: 40px 70px;
+        width: fit-content;
+        padding: 40px 0 40px 4.5vw;
 
     }
     .btn-export {

@@ -1,6 +1,6 @@
+<div class="div-principal">
 
     <app-header></app-header>
-
 <main>
 
     <app-next-task></app-next-task>
@@ -13,3 +13,17 @@
         </div>
     </div> 
 </main>
+</div>
+
+<style>
+@media screen and (min-width: 1025px) {
+    .div-principal {
+        display: grid;
+        grid-template-columns: 10% 30% 60%;
+        grid-template-rows: repeat(1, 100vh);
+        grid-template-areas:
+            "header next-task status-today"
+            "header next-task status-today";
+    }
+}
+</style>

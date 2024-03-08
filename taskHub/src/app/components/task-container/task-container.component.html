@@ -1,4 +1,4 @@
-<div class="task-container padding-mobile">
+<div class="task-container">
     <fieldset>
         <legend class="task-project">Teste</legend>
         <div class="task-container-info">
@@ -56,6 +56,18 @@
             display: flex;
             align-items: center;
             gap: 5px;
+        }
+
+        .tasks-container {
+            gap: 2px;
+            padding: 45px;
+            width: 90%;
+        }
+
+        @media screen and (min-width: 1025px) { 
+            .task-container {
+            padding-left: 4vw;
+            }
         }
     }
 </style>
