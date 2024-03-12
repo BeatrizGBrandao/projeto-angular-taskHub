@@ -10,18 +10,31 @@
 
 .tasks-container {
     gap: 2px;
-    padding-left: 45px;
-    width: 90%;
+    padding: 20px 19px 0 40px;
+    padding-top: 20px;
+    width: 85%;
+}
+
+.novo-estilo {
+    width: 98%;
+    transition: width 0.5s ease;
+}
+
+.outro-estilo {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "next-task status-today";
+    width: 90vw;
+    transition: width 0.5s ease;
 }
 
 
 @media screen and (min-width: 1025px) {
-    main {
+    main,.novo-estilo  {
         display: grid;
         grid-template-columns: 30% 70%;
-        grid-template-rows: repeat(1, 100vh);
         grid-template-areas: "next-task status-today";
-        width: 90vw;
+        width: 89vw;
     }
 
     app-status-today {
@@ -33,7 +46,8 @@
         display: flex;
     }
 
-    .task-container {
+    .tasks-container {
         padding-left: 4vw;
+        width: 90%;
     }
 }

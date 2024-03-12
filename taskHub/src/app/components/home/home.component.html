@@ -1,7 +1,7 @@
 <div class="div-principal">
 
     <app-header></app-header>
-<main>
+<main [ngClass]="estilo">
 
     <app-next-task></app-next-task>
     <div>
@@ -16,6 +16,11 @@
 </div>
 
 <style>
+    .div-principal.sidebar-aberta {
+        display: grid;
+        grid-template-columns: 0% 9%;
+    } 
+
 @media screen and (min-width: 1025px) {
     .div-principal {
         display: grid;

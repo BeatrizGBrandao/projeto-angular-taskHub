@@ -1,6 +1,14 @@
 <header>
+    <div class="header-mobile-sidebar" [class.aberta]="sidebarAberta">
+        <img [ngSrc]='srcSvgOpen' width="40" height="40" (click)="abrirSidebar()"> 
+        <p>L</p>
+        <button>Dashboard</button>
+        <hr>
+        <button>Project 1</button>
+    </div>
+
     <div class="header-mobile">
-        <img [ngSrc]='srcSvgClosed' width="40" height="40"> 
+        <img [ngSrc]='srcSvgClosed' width="40" height="40" (click)="abrirSidebar()" > 
         <button class="btn-export"></button>
     </div>
 
