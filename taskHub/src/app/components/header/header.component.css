@@ -11,11 +11,38 @@
 
     img {
         cursor: pointer;
+        align-self: center;
     }
+
+    button {
+        padding: 5px 7px;
+        border: 2px solid #FFF;
+        border-radius: 0.8em;
+        font: 700 1rem 'Poppins';
+        width: 3em;
+        align-self: center;
+
+        /* Mudar quando criar os atributos */
+        background-color: transparent;
+        color: #FFF;
+    }
+
+    .sidebar-dash-btn {
+        margin-top: 20px;
+        background-color: #FFF;
+        color: var(--primary-text);
+    }
+
+    hr {
+        width: 20px;
+        align-self: center;
+    }
+
 }
 
 .header-mobile-sidebar.aberta {
     transform: translateX(0);
+    gap: 16px;
 }
 
 .header-mobile {
@@ -78,3 +105,18 @@
     }
 
   }
+
+@media screen and (max-width: 499px) {
+    .header-mobile-sidebar {
+        width: 10%;
+        padding: 30px 25px 0;
+    }
+}
+
+/* @media screen and (min-width: 500px) (max-width: 560px) {
+    .header-mobile-sidebar {
+        width: 10%;
+        padding: 30px 45px 0;
+    }
+} */
+ 

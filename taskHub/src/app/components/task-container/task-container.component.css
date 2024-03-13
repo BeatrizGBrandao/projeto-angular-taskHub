@@ -26,21 +26,17 @@ fieldset {
     .task-desc-reduced {
         font-weight: 300;
         font-size: 18px;
-
-    }
-
-    .task-due-container {
-        color: #fff;
-        font-weight: 700;
-        background-color: var(--primary-text);
-        padding: 0 9px;
-        border-radius: 20px;
     }
 
     .task-due-container {
         display: flex;
         align-items: center;
         gap: 5px;
+        color: #fff;
+        font-weight: 700;
+        background-color: var(--primary-text);
+        padding: 0 9px;
+        border-radius: 20px;
     }
 
     .tasks-container {
@@ -52,6 +48,21 @@ fieldset {
     @media screen and (min-width: 1025px) { 
         .task-container {
         padding-left: 4vw;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    fieldset {
+        width: auto;
+        padding: 0 1em 0.5em 1em;
+
+        .task-desc-reduced, .task-name, .task-due-date{
+            font-size: 0.8rem;
+        }
+
+        .task-due-container>img {
+            display: none;
         }
     }
 }

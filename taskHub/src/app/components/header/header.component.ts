@@ -19,7 +19,7 @@ import { SharedService } from '../../services/shared.service';
 })
 export class HeaderComponent {
   srcSvgClosed: string = "/assets/burger-menu-purple.svg";
-  srcSvgOpen: string = "/assets/burger-menu-grey.svg";
+  srcSvgOpen: string = "/assets/burger-menu-white.svg";
   sidebarAberta: boolean = false;
 
   constructor(private sharedService: SharedService) { }
