@@ -14,11 +14,6 @@
     width: 85%;
 }
 
-.novo-estilo {
-    width: 98%;
-    transition: width 0.5s ease;
-}
-
 .outro-estilo {
     display: grid;
     grid-template-columns: 25% 65%;
@@ -30,9 +25,12 @@
 @media screen and (min-width: 1025px) {
     main,.novo-estilo  {
         display: grid;
-        grid-template-columns: 35% 68%;
-        grid-template-areas: "next-task status-today";
-        width: 89vw;
+        grid-template-columns: 32% auto;
+        width: 86vw;
+    }
+
+    .outro-estilo {
+        grid-template-columns: unset;
     }
 
     app-status-today {
@@ -47,6 +45,10 @@
     .tasks-container {
         padding-left: 4vw;
         width: 90%;
+    }
+
+    .dashboard-container {
+        width: 58vw;
     }
 }
 

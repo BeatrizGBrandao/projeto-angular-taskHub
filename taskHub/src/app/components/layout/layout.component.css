@@ -1,0 +1,9 @@
+@media screen and (min-width: 1025px) {
+    .content {
+        display: grid;
+        grid-template-columns: 14% auto;
+        width: 89vw;
+    }
+
+    
+}
