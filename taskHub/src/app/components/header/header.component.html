@@ -1,9 +1,21 @@
 <header>
     <div class="header-mobile-sidebar" [class.aberta]="sidebarAberta">
         <img [ngSrc]='srcSvgOpen' width="40" height="40" (click)="abrirSidebar()"> 
-        <button class="sidebar-dash-btn">D</button>
+        <button 
+            [ngClass]="{ 'active': activeBtn === 'btn1' }"
+            (click)="setActiveBtn('btn1')"
+            
+            
+            [routerLink]="['']"
+            >D</button>
         <hr>
-        <button>P1</button>
+        <button
+            [ngClass]="{ 'active': activeBtn === 'btn2' }"
+            (click)="setActiveBtn('btn2')"
+            
+
+            [routerLink]="['/projeto1']"
+            >P1</button>
     </div>
 
     <div class="header-mobile">
@@ -16,7 +28,7 @@
             <img [ngSrc]='srcSvgClosed' width="40" height="40"> 
             <p>D</p>
             <hr>
-            <p>P1</p>
+            <p> <a [routerLink]="['/projeto1']">P1</a></p>
             <p>P2</p>
         </div>
     </div>

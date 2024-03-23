@@ -13,8 +13,15 @@ export class SharedService {
   estiloObservable = this.estiloSubject.asObservable();
 
   atualizarEstilo() {
-    this.estiloIndex = 1 - this.estiloIndex;
+    this.estiloIndex = (this.estiloIndex + 1) % this.estilos.length;
     const novoEstilo = this.estilos[this.estiloIndex];
     this.estiloSubject.next(novoEstilo);
+  }
+
+  resetarEstilo() {
+    console.log("Rezetando estilo...")
+
+    this.estiloIndex = 0;
+    this.estiloSubject.next(this.estilos[this.estiloIndex]);
   }
 }

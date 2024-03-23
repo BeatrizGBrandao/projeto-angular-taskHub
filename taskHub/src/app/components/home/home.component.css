@@ -21,9 +21,8 @@
 
 .outro-estilo {
     display: grid;
-    grid-template-columns: 32% 68%;
+    grid-template-columns: 25% 65%;
     grid-template-areas: "next-task status-today";
-    width: 92vw;    
     transition: width 0.5s ease;
 }
 
@@ -31,9 +30,9 @@
 @media screen and (min-width: 1025px) {
     main,.novo-estilo  {
         display: grid;
-        grid-template-columns: 32% 68%;
+        grid-template-columns: 35% 68%;
         grid-template-areas: "next-task status-today";
-        width: 92vw;
+        width: 89vw;
     }
 
     app-status-today {
@@ -78,7 +77,7 @@
 @media screen and (min-width: 500px) and (max-width: 560px) {
 
     .outro-estilo {
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 30% 65%;
         width: 90vw;
     }
 }

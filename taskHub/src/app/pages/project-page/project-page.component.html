@@ -1,0 +1,44 @@
+<!-- <app-header></app-header> -->
+
+<div [ngClass]="estilo" class="main-container">
+    <h1>{{ projectName }}</h1>
+    <div class="tasks-container">
+        <app-task-container></app-task-container>
+        <app-task-container></app-task-container>
+        <app-task-container></app-task-container>
+    </div>
+    
+</div>
+
+<style>
+    .main-container, .novo-estilo {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 45px;
+        width: 91%;
+        transition: all 0.5s ease;
+    }
+
+    .tasks-container {
+        width: 85%;
+        margin-top: 20px;
+        grid-area: tasks;
+    }
+
+    .outro-estilo {
+        display: grid;
+        grid-template-areas: "nav h1" 
+                             "nav tasks";
+        grid-template-columns: 25% 80%;
+        justify-content: start;
+        width: 87%;
+        transition: all 0.5s ease;
+    }
+
+    h1 {
+        grid-area: h1;
+        width: fit-content;
+    }
+
+
+</style>
